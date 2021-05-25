@@ -11,7 +11,10 @@ cdk init --language javascript
 # verify it works correctly
 cdk ls
 
-# install the necessary packages
+# install the necessary packages:
+# @aws-cdk/aws-iam to create roles
+# @aws-cdk/aws-lambda-event-sources to get Lambda invoked from S3
+# @aws-cdk/aws-dynamodb to create tables
 npm install @aws-cdk/aws-s3 @aws-cdk/aws-iam @aws-cdk/aws-lambda @aws-cdk/aws-lambda-event-sources @aws-cdk/aws-dynamodb
 
 
